@@ -1690,11 +1690,11 @@
 /* Articles */
 
 	#top .image {
-		border-radius: 50%;
+		border-radius: 10%;
 	}
 
 		#top .image img {
-			border-radius: 50%;
+			border-radius: 20%;
 		}
 
 	#top p a {
