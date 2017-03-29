@@ -3,6 +3,8 @@
 <head><meta charset="utf-8" />
 <title>nmf-nnls</title>
 
+<link rel="stylesheet" href="../../assets/css/main.css" />
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
@@ -130,14 +132,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -168,6 +170,15 @@ div#notebook {
     </script>
     <!-- End of mathjax configuration --></head>
 <body>
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../publications.html">Publications</a></li>
+            <li><a href="../../blog.html">Blog</a></li>
+            <li><a href="../../files/cv.pdf">CV</a></li>
+
+        </ul>
+    </nav>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
@@ -967,7 +978,7 @@ $$
     <span class="n">c</span> <span class="o">=</span> <span class="n">cost</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">H</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="k">num_display_cost</span>==0:
         <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span>
-        
+
 </pre></div>
 
 </div>
